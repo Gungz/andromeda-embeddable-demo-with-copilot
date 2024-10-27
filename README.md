@@ -1,37 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Andromeda Embeddable Demo](https://github.com/andromedaprotocol/embeddable-marketplace-demo/blob/main/package.json) added with [`copilot kit`](https://docs.copilotkit.ai/).
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
 
+```bash
+npm i
+# or
+yarn install
+```
+
+Then, change `NEXT_GOOGLE_API_KEY` in `.env` to your Google API key.
+
+You can get one from [Google AI Studio](https://aistudio.google.com/app/apikey).
+
+Then, run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result, there'll be a chat popup icon at bottom right corner. You can ask various things including your connection, which chain you are connected to, etc.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+![image](screenshot/copilot-andromeda.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Read about the code that adds context to copilot chatbot in [`src/modules/default/components/DefaultApp.tsx`]()
+
+## Next Step
+1. Connect the copilot to action and see if it will work especially for switching between chains and sign transactions.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Copilot kit, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Copilotkit Documentation](https://docs.copilotkit.ai/) 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To learn more about Andromeda, take a look at the following resources:
+- [Andromeda Documentation](https://docs.andromedaprotocol.io/andromeda) 
 
-## Deploy on Vercel
+You can check out [Andromeda GitHub repository](https://github.com/andromedaprotocol).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Licensing
 
